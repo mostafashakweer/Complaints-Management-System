@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نظام إدارة الشكاوى</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': 'rgb(var(--color-primary) / <alpha-value>)',
+              'secondary': 'rgb(var(--color-secondary) / <alpha-value>)',
+              'accent': 'rgb(var(--color-accent) / <alpha-value>)',
+              'danger': 'rgb(var(--color-danger) / <alpha-value>)',
+              'warning': 'rgb(var(--color-warning) / <alpha-value>)',
+              'info': 'rgb(var(--color-info) / <alpha-value>)',
+              'accent2': 'rgb(var(--color-accent2) / <alpha-value>)',
+              'background': 'rgb(var(--color-background) / <alpha-value>)',
+              'surface': 'rgb(var(--color-surface) / <alpha-value>)',
+              'text-primary': 'rgb(var(--color-text-primary) / <alpha-value>)',
+              'text-secondary': 'rgb(var(--color-text-secondary) / <alpha-value>)',
+              'sidebar-background': 'rgb(var(--color-sidebar-background) / <alpha-value>)',
+              'sidebar-text': 'rgb(var(--color-sidebar-text) / <alpha-value>)',
+              'sidebar-active-background': 'rgb(var(--color-sidebar-active-background) / <alpha-value>)',
+              'sidebar-link-text': 'rgb(var(--color-sidebar-link-text) / <alpha-value>)',
+              'badge-success-bg': 'rgb(var(--color-badge-success-bg) / <alpha-value>)',
+              'badge-success-text': 'rgb(var(--color-badge-success-text) / <alpha-value>)',
+              'badge-warning-bg': 'rgb(var(--color-badge-warning-bg) / <alpha-value>)',
+              'badge-warning-text': 'rgb(var(--color-badge-warning-text) / <alpha-value>)',
+              'badge-danger-bg': 'rgb(var(--color-badge-danger-bg) / <alpha-value>)',
+              'badge-danger-text': 'rgb(var(--color-badge-danger-text) / <alpha-value>)',
+              'badge-info-bg': 'rgb(var(--color-badge-info-bg) / <alpha-value>)',
+              'badge-info-text': 'rgb(var(--color-badge-info-text) / <alpha-value>)',
+              'badge-muted-bg': 'rgb(var(--color-badge-muted-bg) / <alpha-value>)',
+              'badge-muted-text': 'rgb(var(--color-badge-muted-text) / <alpha-value>)',
+              'border': 'rgb(var(--color-border) / <alpha-value>)',
+              'background-muted': 'rgb(var(--color-background-muted) / <alpha-value>)',
+              'table-header-bg': 'rgb(var(--color-table-header-bg) / <alpha-value>)',
+              'table-header-text': 'rgb(var(--color-table-header-text) / <alpha-value>)',
+              'link': 'rgb(var(--color-link) / <alpha-value>)',
+              'text-disabled': 'rgb(var(--color-text-disabled) / <alpha-value>)',
+              'badge-gold-bg': 'rgb(var(--color-badge-gold-bg) / <alpha-value>)',
+              'badge-gold-text': 'rgb(var(--color-badge-gold-text) / <alpha-value>)',
+              'badge-pending-bg': 'rgb(var(--color-badge-pending-bg) / <alpha-value>)',
+              'badge-pending-text': 'rgb(var(--color-badge-pending-text) / <alpha-value>)',
+            },
+            borderColor: {
+              'primary': 'rgb(var(--color-primary) / <alpha-value>)',
+              'danger': 'rgb(var(--color-danger) / <alpha-value>)',
+              'warning': 'rgb(var(--color-warning) / <alpha-value>)',
+              'info': 'rgb(var(--color-info) / <alpha-value>)',
+              'badge-muted-text': 'rgb(var(--color-badge-muted-text) / <alpha-value>)',
+              'badge-gold-text': 'rgb(var(--color-badge-gold-text) / <alpha-value>)',
+              'DEFAULT': 'rgb(var(--color-border) / <alpha-value>)',
+            },
+            fontFamily: {
+              sans: ['var(--font-sans)', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "vite": "https://aistudiocdn.com/vite@^7.1.12",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "http": "https://aistudiocdn.com/http@^0.0.1-security",
+    "url": "https://aistudiocdn.com/url@^0.11.4",
+    "fs": "https://aistudiocdn.com/fs@^0.0.1-security",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "ws": "https://aistudiocdn.com/ws@^8.18.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

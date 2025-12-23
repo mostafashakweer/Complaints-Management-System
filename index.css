@@ -1,0 +1,56 @@
+:root {
+  --color-primary: 30 64 175; /* #1E40AF */
+  --color-secondary: 219 234 254; /* #DBEAFE */
+  --color-accent: 16 185 129; /* #10B981 */
+  --color-danger: 220 38 38; /* #DC2626 */
+  --color-warning: 245 158 11; /* #F59E0B */
+  --color-info: 59 130 246; /* #3B82F6 */
+  --color-accent2: 147 51 234; /* #9333EA */
+  --color-background: 249 250 251; /* #F9FAFB */
+  --color-surface: 255 255 255; /* #FFFFFF */
+  --color-text-primary: 17 24 39; /* #111827 */
+  --color-text-secondary: 107 114 128; /* #6B7280 */
+  --color-sidebar-background: 30 64 175;
+  --color-sidebar-text: 255 255 255;
+  --color-sidebar-active-background: 29 78 216;
+  --color-sidebar-link-text: 147 197 253; /* #93C5FD */
+  --color-badge-success-bg: 209 250 229;
+  --color-badge-success-text: 6 95 70;
+  --color-badge-warning-bg: 254 243 199;
+  --color-badge-warning-text: 180 83 9;
+  --color-badge-danger-bg: 254 226 226;
+  --color-badge-danger-text: 185 28 28;
+  --color-badge-info-bg: 219 234 254;
+  --color-badge-info-text: 30 64 175;
+  --color-badge-muted-bg: 243 244 246;
+  --color-badge-muted-text: 75 85 99;
+  --color-border: 229 231 235; /* #E5E7EB */
+  --color-background-muted: 243 244 246; /* #F3F4F6 */
+  --color-table-header-bg: 249 250 251; /* #F9FAFB */
+  --color-table-header-text: 55 65 81; /* #374151 */
+  --color-link: 37 99 235; /* #2563EB */
+  --color-text-disabled: 156 163 175; /* #9CA3AF */
+  --color-badge-gold-bg: 254 252 232; /* #FEFCE8 */
+  --color-badge-gold-text: 133 77 14; /* #854D0E */
+  --color-badge-pending-bg: 255 247 237; /* #FFF7ED */
+  --color-badge-pending-text: 194 65 12; /* #C2410C */
+  --font-sans: 'Segoe UI', 'Segoe UI Variable', 'Tajawal', 'Cairo', 'Almarai', 'Noto Sans Arabic', 'Readex Pro', system-ui, sans-serif;
+}
+body {
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* For Windows App wrappers like Electron/Tauri */
+.title-bar {
+  -webkit-app-region: drag;
+  cursor: grab;
+}
+
+/* General focus styles for better accessibility */
+*:focus-visible {
+  outline: 2px solid rgb(var(--color-primary) / 0.6);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
